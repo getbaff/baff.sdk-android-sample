@@ -1,18 +1,18 @@
 package io.baff.sample;
 
-import android.Manifest;
-import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.core.app.ActivityCompat;
+
+import android.view.View;
+
+import android.view.Menu;
+import android.view.MenuItem;
+
 import io.baff.core.GetBaff;
 
 public class MainActivity extends AppCompatActivity {
@@ -33,20 +33,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        ActivityCompat.requestPermissions(MainActivity.this,
-                new String[]{Manifest.permission.CAMERA},
-                1);
-    }
-
-    @Override
-    public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
-        switch (requestCode) {
-            case 1:
-                if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                    GetBaff.ShowGetBaff( this);
-                }
-                break;
-        }
+        GetBaff.ShowGetBaff( this);
     }
 
     @Override
