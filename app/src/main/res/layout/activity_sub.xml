@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="20dp"
-        android:text="Main activity"
+        android:text="Sub activity"
         />
 
     <Button
@@ -23,16 +23,6 @@
         android:layout_margin="20dp"
         android:onClick="onRunGetBaff"
         android:text="Run GetBaff"
-        />
-
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="20dp"
-        android:onClick="onStartSub"
-        android:text="Open subactivity"
         />
 
 
