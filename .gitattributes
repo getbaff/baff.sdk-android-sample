@@ -1,1 +1,1 @@
-java/app/libs/GetBaffFramework.aar filter=lfs diff=lfs merge=lfs -text
+GetBaffFramework.aar filter=lfs diff=lfs merge=lfs -text
